@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 25px;
+    height: cacl(100vh - 50px);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.barra-pesquisa{
+    grid-area: 1 / 3 / 1 / 7;
+    background-color: lightgray;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 37px 8px 300px;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.barra-principal{
+    grid-area: 2 / 3 / 6 / 13;
+    border-radius: 24px;
+    display: flex;
+    background: #ef0b0b;
+    box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 15px;
+}
+
+.menu-lateral{
+    grid-area: 1 / 1 / 12 / 3;
+    border-radius: 24px;
+    background: #e60926;
+    box-shadow: 12px 12px 48px 24px rgba(0, 0, 0, 0.12);
+    margin-right: 35px;
+
+}
+.menu_text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30px;
+    margin: 25px 25px;
+}
+ 
+.menu_text2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 70px;
+}
+
+.img_dash{
+    width: 20px;
+    height: 20px;
+}
+   
+.txt_dash{
+    margin-left: 10px;
+    font-weight: bold;
+}
+   
+.txt_dash2{
+    margin-left: 10px;
+}
+
+.barra-financas{
+    grid-area: 6 / 3 / 9 / 10;
+    border-radius: 20px;
+    display: flex;
+    margin-top: 30px;
+    align-items: flex-start;
+    gap: 50px;
+    margin-left: 25px;
+}
+ 
+.financa1{
+    position: relative;
+    left: 10px;
+    width: 220px;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+}
+.financa2{
+    position: relative;
+    left: 10px;
+    width: 300px;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+}
+ 
+.financa3{
+    position: relative;
+    left: 10px;
+    width: 300px;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+}
+ 
+.texto4{
+    position: relative;
+    top: -90px;
+    left: 30px;
+}
+
+.barra-cursos{
+    grid-area: 9 / 3 / 12 / 6;
+    border-radius: 24px;
+    background: #e40618;
+    box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.barra-cursos2{
+    grid-area: 9 / 7 / 12 / 10;
+    border-radius: 24px;
+    background: #e80808;
+    box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.barra-instrutores{
+    display: flex;
+    grid-area: 6 / 10 / 8 / 13;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 24px;
+    max-width: 350px;
+    justify-content: space-between;
+    
+}
+
+.muito-texto{
+    grid-area: 8 / 10 / 12 / 13;
+    background-color: black;
+    margin-left: 30px;
+    margin-top: 15px;
+    border-radius: 24px;
+background: #FFF;
+box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+}
+
+.usuario{
+    grid-area: 1 / 10 / 3 / 12;
+    display: inline-flex    
+}
+ 
+#john{
+    width: 45px;
+    height: 45px;
+}
+ 
+#doe{
+    margin-left: 12px;
+    font-weight: 600;
+    line-height: 1px;
+}
+ 
+#year{
+    font-weight: 400;
+    line-height: 30px;
+    justify-content: center;
+}
+
+
+.instrutor1{
+    border-radius: 93px;
+    width: 70px;
+
+}
+
+.instrutor2{
+    border-radius: 93px;
+    width: 70px;
+}
+
+.instrutor3{
+    border-radius: 93px;
+    width: 70px;
+}
+
+.mochila{
+    width: 119.2px;
+    height: 119.2px;
+    position: relative;
+    top: 35px;
+    left: 730px;
+    transform: rotate(8.841deg);
+    flex-shrink: 0;
+    background: url(Backpack.png) #eb0909 50% / cover no-repeat;
+}
+
+.student{
+    width: 160px;
+    height: 175px;
+    top: 28px;
+    position: relative;
+    left: 500px;
+    flex-shrink: 0;
+    background: url(imagem.png)50% / cover no-repeat;
+}
+
+.chapeu2{
+    width: 119.2px;
+    height: 119.2px;
+    top: 35px;
+    position: relative;
+    left: 240px;
+    transform: rotate(-28.13deg);
+    flex-shrink: 0;
+    background: url(Scholarcap\ scroll.png)50% / cover no-repeat;
+}
+.chapeu{
+    height: 60px;
+    width: 60px;
+    margin-top: 10px;
+    margin-left: 40px;
+    background: #ee0910;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.text{
+    position: relative;
+    top: 30px;
+    left: 45px;
+    color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.texto2{
+    position: relative;
+    top: 90px;
+    left: -70px;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.texto3{
+    position: relative;
+    top: 120px;
+    right: 250px;
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.imagem-principal{
+    position: relative;
+    right: 400px;
+    bottom: 0.2px;
+}
+
+.instrutor1, .instrutor2, .instrutor3 {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden; 
+    max-width: 90px;
+}
+
+.img2{
+    position: relative;
+    width: 70px;
+    bottom: 30px;
+    left: 50px;
+}
+.texto-negrito{
+    font-weight: bold;
+    font-size: 300;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 30px;
+    right: 15px;
+}
+
+.texto-normal{
+    font-size: 30;
+    font-weight: lighter;
+    text-align: justify;
+    font-family: Poppins;
+    position: relative;
+    top: 50px;
+    right: 90px;
+}
+
+.img3{
+    position: relative;
+    width: 70px;
+    bottom: 30px;
+    left: 55px;
+}
+.texto-negrito2{
+    font-weight: bold;
+    font-size: 300;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 30px;
+    right: 5px;
+}
+
+.texto-normal2{
+    font-size: 30;
+    font-weight: lighter;
+    text-align: justify;
+    font-family: Poppins;
+    position: relative;
+    top: 50px;
+    right: 60px;
+}
+
+.img4{
+    position: relative;
+    width: 70px;
+    bottom: 30px;
+    left: 40px;
+}
+.texto-negrito3{
+    font-weight: bold;
+    font-size: 300;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 30px;
+    right: 10px;
+}
+
+.texto-normal3{
+    font-size: 30;
+    font-weight: lighter;
+    text-align: justify;
+    font-family: Poppins;
+    position: relative;
+    top: 50px;
+    right: 50px;
+}
+
+.barra1{
+    position: relative;
+    width: 90px;
+    left: 240px;
+    top: 20px;
+}
+
+.texto-curso1{
+    position: relative;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    bottom: 60px;
+    left: 20px;
+}
+
+.texto-curso3{
+    position: relative;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    bottom: 58px;
+    left: 20px;
+}
+
+.texto-curso2{
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+    text-align: center;
+    max-width: 100px;
+    border-radius: 45px;
+}
+
+.barra2{
+        position: relative;
+        width: 90px;
+        left: 240px;
+        top: 20px;
+}
+
+.texto-curso4{
+    position: relative;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    bottom: 60px;
+    left: 20px;
+}
+
+.texto-curso5{
+    position: relative;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    bottom: 58px;
+    left: 20px;
+}
+
+.negrito{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.normal1{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+
+.negrito2{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 35px;
+    left: 20px;
+}
+
+.negrito3{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 20px;
+    top: 40px;
+}
+
+.normal2{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 20px;
+    top: 45px;
+}
+
+.negrito4{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
